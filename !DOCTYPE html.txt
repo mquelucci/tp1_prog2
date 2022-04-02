@@ -1,0 +1,10 @@
+!DOCTYPE html
+html lang=pt-br
+head
+head
+body
+h1Página Inicialh1
+img src=httpsth.bing.comthidR.08bd538f67c8ea4209b5414ca775b8e2rik=BEqrMpf4Oz4OIg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-jCE0f5OIfCM%2fUS
+KHROnv7wI%2fAAAAAAAACig%2fUxJsHlN3MM4%2fs1600%2fAguas%2bClaras%2b-%2bDF.JPG&ehk=If7uU%2fDDkSJAdUMyetqSi4Ewcjxp5uAEU0vf2nIP38E%3d&risl=&pid=ImgRaw&r=0
+
+body
