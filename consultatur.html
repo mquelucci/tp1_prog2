@@ -6,8 +6,27 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Página responsiva -->
-	<title>PROG2</title>
-
+	<title>Consulta de Turmas</title>
+	<style>
+	td{
+	background-color: lightgreen;
+	border:3px solid black;
+	font-family:Arial;
+	text-align: center;
+	}
+	th{
+		background-color: greenyellow;
+		border:3px solid black;
+		font-family:Arial;
+		text-align: center;
+	}
+	caption{
+		background-color:green;
+		border:3px solid black; 
+		font-family: Arial; 
+		font-size: 32px;
+	}
+	</style>
 </head>
 
 <body style="background-color:gray;">
@@ -23,6 +42,74 @@
 	<a href="remtur.html">Remover turma</a>
 	<a href="rempes.html">Remover pessoas</a>
 	<a href="relatorios.html">Relatórios</a>
+
+<hr>
+
+<h1 style="text-align:center;font-family: Arial;">Consultar Turmas</h1>
+
+<hr>
+
+<table align="center">
+	<caption><b><em>Turmas</em></b></caption>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Modalidade</th>
+			<th>Dias de Aula</th>
+			<th>Horário de Ínicio</th>
+			<th>Horário de Término</th>
+			<th>Instrutores</th>
+			<th>Alunos</th>
+		</tr>
+	
+	<tbody>
+		<tr>
+			<td title="Turma de Pilates">PIL</td>
+			<td>Pilates</td>
+			<td>Segunda e Quarta</td>
+			<td>19:00</td>
+			<td>20:00</td>
+			<td>Alessandra</td>
+			<td><p>Bruna, Micaela, Amanda, Luana</p></td>
+		</tr>
+		<tr>
+			<td title="Turma 1 de Musculação">MUSC1</td>
+			<td>Musculação</td>
+			<td>Segunda e Quarta</td>
+			<td>19:00</td>
+			<td>20:00</td>
+			<td>Tales</td>
+			<td><p>Paulo, Bruno, Olavo, Rafael, Natália</p></td>
+		</tr>
+		<tr>
+			<td title="Turma 2 de Musculação">MUSC2</td>
+			<td>Musculação</td>
+			<td>Terça e Sexta</td>
+			<td>19:00</td>
+			<td>20:00</td>
+			<td>Matheus</td>
+			<td><p>Bruna, Luana, Flávio, Lucas, Kaio</p></td>
+		</tr>
+		<tr>
+			<td title="Turma 3 de Musculação">MUSC3</td>
+			<td>Musculação</td>
+			<td>Sábado</td>
+			<td>08:30</td>
+			<td>09:30</td>
+			<td>Felipe</td>
+			<td><p>João, Mariana, Mário, Melyssa, Mirela</p></td>
+		</tr>
+		<tr>
+			<td title="Turma de Crossfit">CFT</td>
+			<td>Crossfit</td>
+			<td>Segunda, Quarta e Sexta</td>
+			<td>20:30</td>
+			<td>21:30</td>
+			<td>Heloísa</td>
+			<td><p>Paula, Bruna, Flávia, Flávio</p></td>
+		</tr>
+	</tbody>
+</table>
 
 </body>
 
