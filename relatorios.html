@@ -6,81 +6,16 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Página responsiva -->
-	<title>Relatorio</title>
+	<title>RELATÓRIOS</title>
 	<style>
-		body {
-			background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
-		}
-
-		.container {
-			border-collapse: collapse;
-			margin: 25px 0;
-			font-size: 0.9em;
-			min-width: 400px;
-			overflow: hidden;
-			box-shadow: 0 0 20 px rgb(0, 0, 0.15);
-
-
-		}
-
-		.container {
-
-			color: #000000;
-			text-align: left;
-			font-weight: bold;
-
-		}
-
-		.container tbody tr {
-			text-align: center;
-
-		}
-
-		.container tbody tr:nth-of-type(even) {
-			background-color: #f3f3f3;
-
-		}
-
-		.container thead {
-			background-color: rgb(62, 151, 235);
-
-		}
-
-
-
-		a {
-			border: 2px solid black;
-			position: relative;
-			top: 50%;
-			border-radius: 10px;
-			background-color: rgb(255, 255, 255);
-			color: black;
-			font-family: arial;
-			margin: 1px 1px;
-			padding: 10px 20px;
-			text-decoration: none;
-			display: inline-block;
-			transition: .3s;
-		}
-
-		a:hover,
-		a:active {
-			background-color: rgb(62, 151, 235);
-			color: black;
-			transition: .3s;
-		}
-
-		.container {
-			display: flex;
-			gap: 100px;
-			flex-wrap: wrap;
-
-
-		}
+	tr, td, th{
+		background-color:yellow;
+		border:2px solid black;
+	}
 	</style>
 </head>
 
-<body>
+<body style="background-color:gray;">
 
 	<a href="atualizapes.html">Atualizar pessoa</a>
 	<a href="atualizatur.html">Atualizar turma</a>
@@ -94,132 +29,120 @@
 	<a href="consultapes.html">Consultar pessoa</a>
 	<a href="index.html">Home</a>
 
-	<hr>
+<hr>
 
-	<h1 style="text-align:center">Relatórios</h1>
+<h1 style="text-align:center">Relatórios</h1>
 
-	<hr>
-	<div class="container">
-		<table style="border:2px solid black;font-family:Arial;background-color:white;">
+<hr>
+<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:white">
 
-			<caption style="border:2px solid black;border-radius:2px;background-color:rgb(62, 151, 235)">
-				<b><em>Instrutores que
-						mais
-						trabalham</em></b></caption>
+<caption style="border:2px solid black;border-radius:2px;background-color:yellow;"><b><em>Instrutores que mais trabalham</em></b></caption>
 
-			<thead>
-				<tr>
-					<th>Instrutor</th>
-					<th>Horas Trabalhadas</th>
-				</tr>
-			</thead>
+<thead>
+	<tr>
+		<th>Instrutor</th>
+		<th>Horas Trabalhadas</th>
+	</tr>
+</thead>
 
-			<tbody>
-				<tr>
-					<td>Felipe</td>
-					<td>12:00</td>
-				</tr>
-				<tr>
-					<td>Tales</td>
-					<td>14:00</td>
-				</tr>
-				<tr>
-					<td>Matheus</td>
-					<td>10:00</td>
-				</tr>
-			</tbody>
+<tbody>
+	<tr>
+		<td>Felipe</td>
+		<td>12:00</td>
+	</tr>
+	<tr>
+		<td>Tales</td>
+		<td>14:00</td>
+	</tr>
+	<tr>
+		<td>Matheus</td>
+		<td>10:00</td>
+	</tr>
+</tbody> 
 
-		</table>
+</table>
+<br><br>
+<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:white">
 
-		<table style="border:2px solid black;font-family:Arial;background-color:white;">
+<caption style="border:2px solid black;border-radius:2px;background-color:yellow;"><b><em>Instrutores que menos trabalham</em></b></caption>
 
-			<caption style="border:2px solid black;border-radius:2px;background-color:rgb(62, 151, 235)">
-				<b><em>Instrutores que
-						menos
-						trabalham</em></b></caption>
+<thead>
+	<tr>
+		<th>Alunos</th>
+		<th>Horas trabalhadas</th>
+	</tr>
+</thead>
 
-			<thead>
-				<tr>
-					<th>Alunos</th>
-					<th>Horas trabalhadas</th>
-				</tr>
-			</thead>
-
-			<tbody>
-				<tr>
-					<td>Carlos</td>
-					<td>08:00</td>
-				</tr>
-				<tr>
-					<td>Tais</td>
-					<td>08:30</td>
-				</tr>
-				<tr>
-					<td>Jessica</td>
-					<td>06:00</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<table style="border:2px solid black;font-family:Arial;background-color:white;">
-
-			<caption style="border:2px solid black;border-radius:2px;background-color:rgb(62, 151, 235)"><b><em>Alunos
-						que mais
-						frequentam</em></b></caption>
-
-			<thead>
-				<tr>
-					<th>Alunos</th>
-					<th>Horas de treino</th>
-				</tr>
-			</thead>
-
-			<tbody>
-				<tr>
-					<td>Alessandra</td>
-					<td>03:00</td>
-				</tr>
-				<tr>
-					<td>Helen</td>
-					<td>02:30</td>
-				</tr>
-				<tr>
-					<td>Renan</td>
-					<td>01:45</td>
-				</tr>
-			</tbody>
-		</table>
+<tbody>
+	<tr>
+		<td>Carlos</td>
+		<td>08:00</td>
+	</tr>
+	<tr>
+		<td>Tais</td>
+		<td>08:30</td>
+	</tr>
+	<tr>
+		<td>Jessica</td>
+		<td>06:00</td>
+	</tr>
+</tbody>
+</table><br><br>
 
 
-		<table style="border:2px solid black;font-family:Arial;background-color:white;">
+<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:white;">
 
-			<caption style="border:2px solid black;border-radius:2px;background-color:rgb(62, 151, 235)"><b><em>Alunos
-						que menos
-						frequentam</em></b></caption>
+<caption style="border:2px solid black;border-radius:2px;background-color:yellow;"><b><em>Alunos que mais frequentam</em></b></caption>
 
-			<thead>
-				<tr>
-					<th>Alunos</th>
-					<th>Horas de treino</th>
-				</tr>
-			</thead>
+<thead>
+	<tr>
+		<th>Alunos</th>
+		<th>Horas de treino</th>
+	</tr>
+</thead>
 
-			<tbody>
-				<tr>
-					<td>Samara</td>
-					<td>01:00</td>
-				</tr>
-				<tr>
-					<td>Tulio</td>
-					<td>00:45</td>
-				</tr>
-				<tr>
-					<td>Dienisson</td>
-					<td>00:30</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-</body>
+<tbody>
+	<tr>
+		<td>Alessandra</td>
+		<td>03:00</td>
+	</tr>
+	<tr>
+		<td>Helen</td>
+		<td>02:30</td>
+	</tr>
+	<tr>
+		<td>Renan</td>
+		<td>01:45</td>
+	</tr>
+</tbody>
+</table><br><br>
+
+
+<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:white;">
+
+<caption style="border:2px solid black;border-radius:2px;background-color:yellow;"><b><em>Alunos que menos frequentam</em></b></caption>
+
+<thead>
+	<tr>
+		<th>Alunos</th>
+		<th>Horas de treino</th>
+	</tr>
+</thead>
+
+<tbody>
+	<tr>
+		<td>Samara</td>
+		<td>01:00</td>
+	</tr>
+	<tr>
+		<td>Tulio</td>
+		<td>00:45</td>
+	</tr>
+	<tr>
+		<td>Dienisson</td>
+		<td>00:30</td>
+	</tr>
+</tbody>
+</table>
 
 </html>
