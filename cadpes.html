@@ -5,28 +5,163 @@
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Página responsiva -->
-	<title>CADASTRO DE PESSOAS</title>
+	<title>PROG2</title>
 	<style>
-	a{
-		border-radius:4px;
-		background-color:yellow;
+		a{
+		border: 2px solid black;
+		position: relative;
+		top: 50%;
+		border-radius: 10px;
+		background-color: rgb(255, 255, 255);
 		color:black;
 		font-family:arial;
 		margin:1px 1px;
-		padding:1px;
+		padding:10px 20px;
+		text-decoration: none;
+		display: inline-block;
 	}
-	h1, h2, h3, h4, h5, h6{
-		font-family:Verdana, sans-serif;
+	a:hover, a:active {
+		background-color: rgb(62, 151, 235);
+		color: black;
+		transition: 0.3s;
 	}
+	</style>
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
+		}
+
+		.box{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba( 0 , 0, 0, 0.5);
+			padding: 15px;
+			width: 20%;
+			color: white;
+		}
+		fieldset{
+			border: 3px solid dodgerblue;
+		}
+		legend{
+			border: 1px solid white;
+			padding: 10px;
+			text-align: center;
+			background-color: dodgerblue;
+			border-radius: 10px;
+		}
+		.inputBox{
+			position: relative
+		}
+		.inputUser{
+			background: none;
+			border: none;
+			border-bottom: 1px solid white;
+			outline: none;
+			color: white;
+			font-size: 15px;
+			width: 100%;
+			letter-spacing: 2px;
+			
+			
+		}
+		.labelInput{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			pointer-events: none;
+			transition: .5px;
+		}
+		.inputUser:focus ~ .labelInput,
+		.inputUser:valid ~ .labelInput{
+			top: -20px;
+			font-size: 12px;
+			color: dodgerblue;
+
+		}
+		#data_nascimento{
+			border: none;
+			padding: 6px;
+			border-radius: 10px;
+			outline: none;
+			font-size: 15px;
+		}
+		#submit{
+			background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
+			padding: 5px;
+			width: 100%;
+			cursor: pointer;
+			color: white;
+			border-radius: 10px;
+			font-size: 15px;
+		
+		}
+		#submit:hover{
+			background-image: linear-gradient(to right, rgb(47, 0, 255), rgb(97, 61, 255));
+		}
 	</style>
 </head>
 
-<body style="background-color:gray;">
+<body>
+<div class="box">
+      <form action="">
+	   <fieldset>
+		   <legend><b>Cadastro de pessoas</b></legend>
+		   <div class="inputBox">
+			   <input type="text" name="nome" id="nome" class="inputUser" required>
+			   <label for="nome" class="labelInput">Digite seu nome completo</label>
+			</div>
+			<br><br>
+			<div class="inputBox">
+				<input type="text" name="email" id="email" class="inputUser" required>
+				<label for="nome" class="labelInput">Digite seu email</label>
+			 </div>
+			 <br><br>
+			 <div class="inputBox">
+				<input type="text" name="telefone" id="telefone" class="inputUser" required>
+				<label for="nome" class="labelInput">Digite seu telefone</label>
+				</div>
+				<br><br>
+				<p>Sexo:</p>
+				<input type="radio" id="feminino" name="genero" value="feminino" required>
+				<label for="feminino">Feminino</label>
+				<br>
+				<input type="radio" id="masculino" name="genero" value="masculino" required>
+				<label for="feminino">Masculino</label>
+				<br>
+				<input type="radio" id="outro" name="genero" value="outro" required>
+				<label for="feminino">Outro</label>
+				<br><br>
+				<label for="data_nascimento"><b>Data de nascimento</b></label>
+				<input type="date" name="data_nascimento" id="data_nascimento"  required>
+			 <br><br>
+			 <div class="inputBox">
+				<input type="text" name="cidade" id="cidade" class="inputUser" required>
+				<label for="cidade" class="labelInput">Cidade</label>
+			 </div>
+			 <br><br>
+			 <div class="inputBox">
+				<input type="text" name="estado" id="estado" class="inputUser" required>
+				<label for="estado" class="labelInput">Estado</label>
+			 </div>
+			 <br><br>
+			 <div class="inputBox">
+				<input type="text" name="endereco" id="endereco" class="inputUser" required>
+				<label for="endereco" class="labelInput">Endereço</label>
+			 </div>
+			 <br><br>
+			 <input type="submit" name="submit" id="submit"
+		     <br> <br>
+	   </fieldset>
+	  </form>
 
-
-<a href="atualizapes.html">Atualizar pessoa</a>
-<a href="atualizatur.html">Atualizar turma</a>
+</div>
+	
+<div>
+<a href="atualizapes.html" target="_blank">Atualizar pessoa </a>
+<a href="atualizatur.html" target="_blank">Atualizar turma</a>
 <a href="remtur.html">Remover pessoas</a>
 <a href="rempes.html">Remover turma</a>
 <a href="index.html">Home</a>
@@ -37,7 +172,7 @@
 <a href="consultapes.html">Consultar pessoas</a>
 <a href="relatorios.html">Relatórios</a>
 
-
+</div>
 </body>
 
 
