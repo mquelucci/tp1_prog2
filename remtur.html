@@ -1,28 +1,111 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Remover turma</title>
+	<style>
+		a{
+		border: 2px solid black;
+		position: relative;
+		top: 50%;
+		border-radius: 10px;
+		background-color: rgb(255, 255, 255);
+		color:black;
+		font-family:arial;
+		margin:1px 1px;
+		padding:10px 20px;
+		text-decoration: none;
+		display: inline-block;
+		margin-top: 0.5%;
+		transition: .3s;
+		
+	}
+	a:hover, a:active {
+		background-color: rgb(62, 151, 235);
+		color: white;
+	}
+	</style>
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
+		}
 
-	<meta charset="UTF-8">
-	<title>PROG2</title>
-
+		.box{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba( 0 , 0, 0, 0.5);
+			padding: 15px;
+			width: 20%;
+			color: white;
+		}
+		fieldset{
+			border: 3px solid dodgerblue;
+		}
+		legend{
+			border: 1px solid white;
+			padding: 10px;
+			text-align: center;
+			background-color: dodgerblue;
+			border-radius: 10px;
+		}
+		.inputBox{
+			position: relative
+		}
+		#submit{
+			background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
+			padding: 5px;
+			width: 100%;
+			cursor: pointer;
+			color: white;
+			border-radius: 10px;
+			font-size: 15px;
+		
+		}
+		#submit:hover{
+			background-image: linear-gradient(to right, rgb(45, 22, 245), rgb(48, 61, 236));
+		}
+	</style>
 </head>
 
-<body style="background-color:gray;">
+<body>
+<div class="box">
+      <form action="">
+	   <fieldset>
+		   <legend><b>Remover turma</b></legend><br>
+		   <label for="pessoas" class="labelInput"><b>Selecionar turma:</b></label>
+		   <select name="pessoas" id="pessoas">
+			   <option value="intrutorma">Instrutor que mais trabalha</option>
+			   <option value="intrutorme">Instrutor que menos trabalha</option>
+			   <option value="alunoma">Alunos que mais frequentam</option>
+			   <option value="alunome">Alunos que menos frequentam</option>
 
-<a href="atualizapes.html">Atualizar pessoa</a>
-<a href="atualizatur.html">Atualizar turma</a>
-<a href="index.html">Home</a>
-<a href="rempes.html">Remover pessoa</a>
-<a href="cadtur.html">Cadastrar turma</a>
-<a href="cadpes.html">Cadastrar turma</a>
-<a href="historia.html">História</a>
-<a href="login.html">Login</a>
-<a href="consultatur.html">Consultar turma</a>
-<a href="consultapes.html">Consultar pessoa</a>
-<a href="relatorios.html">Relatórios</a>
+		   </select><br><br>
+			 <input type="submit" name="submit" id="submit" value="Remover"
+		    
+	   </fieldset>
+	  </form>
 
+</div>
+	
+<div>
+	<a href="index.html" target="_blank">Home </a>
+	<a href="login.html" target="_blank">Login</a>
+	<a href="historia.html" target="_blank">História</a>
+	<a href="cadpes.html" target="_blank">Cadastrar pessoas</a>
+	<a href="cadtur.html" target="_blank">Cadastrar turma</a>
+	<a href="remtur.html" target="_blank">Remover turmas</a>
+	<a href="rempes.html" target="_blank">Remover pessoas</a>
+	<a href="atualizarpes.html" target="_blank">Atulizar pessoa</a>
+	<a href="atualizatur.html" target="_blank">Atualizar turma</a>
+	<a href="consultatur.html" target="_blank">Consultar turma</a>
+	<a href="consultapes.html" target="_blank">Consultar pessoas</a>
+	<a href="relatorios.html" target="_blank">Relatórios</a>
+</div>
 </body>
 
 
