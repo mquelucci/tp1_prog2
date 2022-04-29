@@ -10,6 +10,12 @@
 		background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
 
 	}
+	.box{
+                display: flex;
+                
+
+                
+        }
 	tr, td, th{
 		background-color: rgb(62, 235, 198);
 		border:2px solid black;
@@ -48,7 +54,7 @@
 		<a href="login.html" target="_blank">Login</a>
 		<a href="historia.html" target="_blank">História</a>
 		<a href="cadpes.html" target="_blank">Cadastrar pessoas</a>
-		<a href="cadtur.html" target="_blank">Cadastrar turma</a>
+	<a href="cadtur.html" target="_blank">Cadastrar turma</a>
 		<a href="remtur.html" target="_blank">Remover turmas</a>
 		<a href="rempes.html" target="_blank">Remover pessoas</a>
 		<a href="atualizarpes.html" target="_blank">Atulizar pessoa</a>
@@ -62,7 +68,9 @@
 <h1>Relatórios</h1>
 
 <hr>
-<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black">
+
+<div class="box">
+<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black" align="center">
 
 <caption style="border:3px solid black;border-radius:2px;background-color: rgb(62, 235, 198);"><b><em>Instrutores que mais trabalham</em></b></caption>
 
@@ -90,7 +98,7 @@
 
 </table>
 <br><br>
-<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black">
+<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black" align="center">
 
 <caption style="border:3px solid black;border-radius:2px;background-color: rgb(62, 235, 198);"><b><em>Instrutores que menos trabalham</em></b></caption>
 
@@ -118,7 +126,7 @@
 </table><br><br>
 
 
-<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black;">
+<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black;" align="center">
 
 <caption style="border:3px solid black;border-radius:2px;background-color: rgb(62, 235, 198);"><b><em>Alunos que mais frequentam</em></b></caption>
 
@@ -146,7 +154,7 @@
 </table><br><br>
 
 
-<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black;">
+<table style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black;" align="center">
 
 <caption style="border:3px solid black;border-radius:2px;background-color: rgb(62, 235, 198);"><b><em>Alunos que menos frequentam</em></b></caption>
 
@@ -172,5 +180,6 @@
 	</tr>
 </tbody>
 </table>
+</div>
 </body>
 </html>
