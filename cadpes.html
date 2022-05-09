@@ -34,7 +34,7 @@
 			border: 3px solid dodgerblue;
 			color: white;
 			width:20%;
-    	background-color: rgba( 0 , 0, 0, 0.5);
+    		background-color: rgba( 0 , 0, 0, 0.5);
 		}
 		legend{
 			border: 1px solid white;
@@ -45,7 +45,7 @@
 		}
 		.inputBox{
 			position: relative; 
-                        margin-top: 20px;
+            margin-top: 20px;
 
 		}
 		.inputUser{
@@ -64,7 +64,7 @@
 			top: 0px;
 			left: 0px;
 			pointer-events: none;
-			transition: .5px;
+			transition: 0.5px;
 		}
 		.inputUser:focus ~ .labelInput,
 		.inputUser:valid ~ .labelInput{
@@ -93,6 +93,9 @@
 		#submit:hover{
 			background-image: linear-gradient(to right, rgb(45, 22, 245), rgb(48, 61, 236));
 		}
+		.footer{
+			text-align: center;
+		}
 	</style>
 </head>
 
@@ -113,7 +116,7 @@
 </div>
 <hr>
 <div align="center">
-	<form action="">
+	<form action="meuservidor.php">
 	   <fieldset>
 		   <legend><b>Cadastro de pessoas</b></legend>
 		   <div class="inputBox">
@@ -164,15 +167,15 @@
 				<label for="endereco" class="labelInput">Endereço</label>
 			 </div>
 			 <br><br>
-			 <input type="submit" name="submit" id="submit" value="Concluir cadastro"
+			 <input type="submit" name="submit" id="submit" value="Concluir cadastro">
 		    
 	   </fieldset>
 	  </form>
 </div>
 <hr>
-<footer align="center">
-	<h4> Desenvolvido por Matheus Quelucci, Felipe Júnio e Tales Pádua </h4>
-	<h4> Tecnologia em Redes de Computadores - IFSULDEMINAS </h4>
+<footer>
+	<h4 class="footer">Desenvolvido por Matheus Quelucci, Felipe Júnio e Tales Pádua </h4>
+	<h4 class="footer"> Tecnologia em Redes de Computadores - IFSULDEMINAS </h4>
 </footer>
 </body>
 
