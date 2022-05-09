@@ -6,40 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Relatorio</title>
 	<style>
-	body {
-		background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
+			
+		caption{
+			border:3px solid black;
+			border-radius:2px;
+			background-color: rgb(62, 235, 198);
+		}
+		body {
+			background-image: linear-gradient(to right, rgb(62, 151, 235), rgb(26, 46, 73));
 
-	}
-	tr, td, th{
-		background-color: rgb(62, 235, 198);
-		border:2px solid black;
-	}
-	a{
-		border: 2px solid black;
-		position: relative;
-		top: 50%;
-		border-radius: 10px;
-		background-color: rgb(255, 255, 255);
-		color:black;
-		font-family:arial;
-		margin:1px 1px;
-		padding:10px 20px;
-		text-decoration: none;
-		display: inline-block;
-		margin-top: 0.5%;
-		transition: .3s;
-	}
-	a:hover, a:active {
-		background-color: rgb(62, 151, 235);
-		color: white;
-		
-	}
-	h1{
-		text-align: center;
-		font-size: 50px;
-	}
-	.footer{
-		text-align: center;
+		}
+		tr, td, th{
+			background-color: rgb(62, 235, 198);
+			border:2px solid black;
+		}
+		a{
+			border: 2px solid black;
+			position: relative;
+			top: 50%;
+			border-radius: 10px;
+			background-color: rgb(255, 255, 255);
+			color:black;
+			font-family:arial;
+			margin:1px 1px;
+			padding:10px 20px;
+			text-decoration: none;
+			display: inline-block;
+			margin-top: 0.5%;
+			transition: .3s;
+		}
+		a:hover, a:active {
+			background-color: rgb(62, 151, 235);
+			color: white;
+			
+		}
+		h1{
+			text-align: center;
+			font-size: 50px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.footer{
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.table{
+			display: flex;
+			gap: 50px;
+			flex-wrap: wrap;
+			margin-left: 10%;
+		}
+		table{
+			border:2px solid black;
+			font-family:Arial;
+			border:2px solid black;
+			background-color:black;
 		}
 	</style>
 </head>
@@ -54,7 +74,7 @@
 		<a href="cadtur.html" target="_blank">Cadastrar turma</a>
 		<a href="remtur.html" target="_blank">Remover turmas</a>
 		<a href="rempes.html" target="_blank">Remover pessoas</a>
-		<a href="atualizarpes.html" target="_blank">Atulizar pessoa</a>
+		<a href="atualizarpes.html" target="_blank">Atualizar pessoa</a>
 		<a href="atualizatur.html" target="_blank">Atualizar turma</a>
 		<a href="consultatur.html" target="_blank">Consultar turma</a>
 		<a href="consultapes.html" target="_blank">Consultar pessoas</a>
@@ -64,120 +84,122 @@
 <h1>Relatórios</h1>
 
 <hr>
-<table align="center" style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black">
 
-<caption><b><em>Instrutores que mais trabalham</em></b></caption>
+<br>
 
-<thead>
-	<tr>
-		<th>Instrutor</th>
-		<th>Horas Trabalhadas</th>
-	</tr>
-</thead>
+<div class="table">
 
-<tbody>
-	<tr>
-		<td>Felipe</td>
-		<td>12:00</td>
-	</tr>
-	<tr>
-		<td>Tales</td>
-		<td>14:00</td>
-	</tr>
-	<tr>
-		<td>Matheus</td>
-		<td>10:00</td>
-	</tr>
-</tbody> 
+<table>
+	<caption><b><em>Instrutores que mais trabalham</em></b></caption>
 
+	<thead>
+		<tr>
+			<th>Instrutor</th>
+			<th>Horas Trabalhadas</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Felipe</td>
+			<td>12:00</td>
+		</tr>
+		<tr>
+			<td>Tales</td>
+			<td>14:00</td>
+		</tr>
+		<tr>
+			<td>Matheus</td>
+			<td>10:00</td>
+		</tr>
+	</tbody> 
 </table>
-<br><br>
-<table align="center" style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black">
 
-<caption style="border:3px solid black;border-radius:2px;background-color: rgb(62, 235, 198);"><b><em>Instrutores que menos trabalham</em></b></caption>
-
-<thead>
-	<tr>
-		<th>Alunos</th>
-		<th>Horas trabalhadas</th>
-	</tr>
-</thead>
-
-<tbody>
-	<tr>
-		<td>Carlos</td>
-		<td>08:00</td>
-	</tr>
-	<tr>
-		<td>Tais</td>
-		<td>08:30</td>
-	</tr>
-	<tr>
-		<td>Jessica</td>
-		<td>06:00</td>
-	</tr>
-</tbody>
-</table><br><br>
-
-
-<table align="center" style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black;">
-
-<caption style="border:3px solid black;border-radius:2px;background-color: rgb(62, 235, 198);"><b><em>Alunos que mais frequentam</em></b></caption>
-
-<thead>
-	<tr>
-		<th>Alunos</th>
-		<th>Horas de treino</th>
-	</tr>
-</thead>
-
-<tbody>
-	<tr>
-		<td>Alessandra</td>
-		<td>03:00</td>
-	</tr>
-	<tr>
-		<td>Helen</td>
-		<td>02:30</td>
-	</tr>
-	<tr>
-		<td>Renan</td>
-		<td>01:45</td>
-	</tr>
-</tbody>
-</table><br><br>
-
-
-<table align="center" style="border:2px solid black;font-family:Arial;border:2px solid black;background-color:black;">
-
-<caption style="border:3px solid black;border-radius:2px;background-color: rgb(62, 235, 198);"><b><em>Alunos que menos frequentam</em></b></caption>
-
-<thead>
-	<tr>
-		<th>Alunos</th>
-		<th>Horas de treino</th>
-	</tr>
-</thead>
-
-<tbody>
-	<tr>
-		<td>Samara</td>
-		<td>01:00</td>
-	</tr>
-	<tr>
-		<td>Tulio</td>
-		<td>00:45</td>
-	</tr>
-	<tr>
-		<td>Dienisson</td>
-		<td>00:30</td>
-	</tr>
-</tbody>
+<table>
+	<caption><b><em>Instrutores que menos trabalham</em></b></caption>
+	<thead>
+		<tr>
+			<th>Alunos</th>
+			<th>Horas trabalhadas</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Carlos</td>
+			<td>08:00</td>
+		</tr>
+		<tr>
+			<td>Tais</td>
+			<td>08:30</td>
+		</tr>
+		<tr>
+			<td>Jessica</td>
+			<td>06:00</td>
+		</tr>
+	</tbody>
 </table>
+
+<table>
+	<caption><b><em>Alunos que mais frequentam</em></b></caption>
+	<thead>
+		<tr>
+			<th>Alunos</th>
+			<th>Horas de treino</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Alessandra</td>
+			<td>03:00</td>
+		</tr>
+		<tr>
+			<td>Helen</td>
+			<td>02:30</td>
+		</tr>
+		<tr>
+			<td>Renan</td>
+			<td>01:45</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<table>
+	<caption><b><em>Alunos que menos frequentam</em></b></caption>
+	<thead>
+		<tr>
+			<th>Alunos</th>
+			<th>Horas de treino</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Samara</td>
+			<td>01:00</td>
+		</tr>
+		<tr>
+			<td>Tulio</td>
+			<td>00:45</td>
+		</tr>
+		<tr>
+			<td>Dienisson</td>
+			<td>00:30</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+
+<br>
+
 <hr>
+
+<br>
+
 <footer>
 	<h4 class="footer">Desenvolvido por Matheus Quelucci, Felipe Júnio e Tales Pádua </h4>
 	<h4 class="footer"> Tecnologia em Redes de Computadores - IFSULDEMINAS </h4>
 </footer>
+
 </body>
+
 </html>
